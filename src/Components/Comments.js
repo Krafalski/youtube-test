@@ -1,5 +1,5 @@
 import Comment from "./Comment";
-import CommentForm from "../components/CommentForm";
+import CommentForm from "./CommentForm";
 
 function Comments({ addComment, videoId, comments }) {
   return (

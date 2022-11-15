@@ -2,10 +2,10 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // COMPONENTS
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Video from "./pages/Video";
-import NavBar from "./components/NavBar";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import Video from "./Pages/Video";
+import NavBar from "./Components/NavBar";
 
 function App() {
   const [comments, setComments] = useState([]);

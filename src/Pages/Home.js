@@ -1,9 +1,9 @@
 // DEPENDENCIES
 import { useState } from "react";
 
-import SearchBar from "../components/SearchBar";
-import NoVideos from "../components/NoVideos";
-import VideoCards from "../components/VideoCards";
+import SearchBar from "../Components/SearchBar";
+import NoVideos from "../Components/NoVideos";
+import VideoCards from "../Components/VideoCards";
 
 function Home() {
   const [showVideos, setShowVideos] = useState(false);
