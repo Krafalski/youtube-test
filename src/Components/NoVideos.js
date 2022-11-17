@@ -1,7 +1,13 @@
-export default function NoVideos() {
+export default function NoVideos({ closeModal }) {
   return (
-    <div>
-      <h2>No Videos</h2>
+    <div className="modal-wrapper" onClick={closeModal}>
+      <div className="modal">
+        <div>
+          {" "}
+          <h2>No Videos</h2>
+          <button onClick={closeModal}>X</button>
+        </div>
+      </div>
     </div>
   );
 }

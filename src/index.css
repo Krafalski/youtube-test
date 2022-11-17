@@ -28,7 +28,8 @@ code {
 }
 
 nav {
-  height: 7vh;
+  min-height: 7vh;
+  padding: 1em 0;
   display: flex;
   align-items: center;
   background-color: var(--pomegranite-lite);
@@ -104,4 +105,34 @@ a {
 
 .Home main a:hover {
   background-color: var(--dark-night);
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(53, 80, 112, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper .modal {
+  width: 70vw;
+  height: 70vh;
+  background: rgb(181, 101, 118);
+  border: 5px solid rgb(234, 172, 139);
+}
+
+.modal > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal button {
+  flex-flow: row-reverse;
 }

@@ -22,13 +22,22 @@ function Home() {
           setShowVideos(false);
         }
       })
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error) && showVideos(false));
+  }
+
+  function closeModal() {
+    setVideos([]);
+    setShowVideos(true);
   }
 
   return (
     <div className="Home">
       <SearchBar getVideos={getVideos} />
-      {showVideos ? <VideoCards videos={videos} /> : <NoVideos />}
+      {showVideos ? (
+        <VideoCards videos={videos} />
+      ) : (
+        <NoVideos closeModal={closeModal} />
+      )}
     </div>
   );
 }
