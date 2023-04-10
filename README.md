@@ -11,6 +11,9 @@ You may receive partial credit (0.5 points) for features that are close but do n
 
 For this project, you will work with at least one other person to recreate parts of the YouTube application.
 
+> **Note**: Your contributions to this group project must be equitable. Failure to make meaningful individual contributions to this project may lead to a separate assessment of some kind or a failing grade.
+
+
 ![](./assets/home-2.png)
 
 ## Getting started
