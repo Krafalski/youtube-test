@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+:root {
+  --dark-night: rgb(53, 80, 112);
+  --deep-night: #010101;
+  --plum-dream: rgb(109, 89, 122);
+  --merlot-spritzer: rgb(181, 101, 118);
+  --pomegranite-lite: rgb(229, 107, 111);
+  --toasted-almond: rgb(234, 172, 139);
+  --latte-highlighter: #f7ede2;
+  --main-height: 89vh;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--deep-night);
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--latte-highlighter);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+nav {
+  min-height: 7vh;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--pomegranite-lite);
+  box-shadow: 2px 2px 4px var(--plum-dream);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--plum-dream);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+header {
+  background-color: var(--dark-night);
+}
+
+main {
+  background-color: var(--deep-night);
+  min-height: var(--main-height);
+}
+
+input {
+  padding: 1em;
+}
+
+input[type="submit"] {
+  background: var(--plum-dream);
+  color: var(--latte-highlighter);
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+a {
+  color: var(--toasted-almond);
+  text-decoration: none;
+}
+
+#root {
+  /* border: 4px solid blue; */
+}
+
+.Home {
+  /* border: 8px double orchid; */
+  min-height: var(--main-height);
+}
+
+.About {
+  /* border: 8px dashed goldenrod; */
+  min-height: var(--main-height);
+}
+
+.Video {
+  /* border: 8px dotted teal; */
+  min-height: var(--main-height);
+}
+
+.VideoCard {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.Home main a:hover {
+  background-color: var(--dark-night);
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(53, 80, 112, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper .modal {
+  width: 70vw;
+  height: 70vh;
+  background: rgb(181, 101, 118);
+  border: 5px solid rgb(234, 172, 139);
+}
+
+.modal > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal button {
+  flex-flow: row-reverse;
+}
