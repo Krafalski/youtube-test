@@ -10,6 +10,7 @@ import NavBar from "./Components/NavBar";
 function App() {
   const [comments, setComments] = useState([]);
 
+  console.log("hiii");
   function addComment(obj) {
     const updateComments = [...comments, obj];
     setComments(updateComments);
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+
           <Route
             path="/video/:id"
             element={<Video comments={comments} addComment={addComment} />}

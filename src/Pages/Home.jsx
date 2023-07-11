@@ -11,7 +11,9 @@ function Home() {
 
   function getVideos(searchCriteria) {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&kind=video&q=${searchCriteria}&key=${process.env.REACT_APP_API_KEY}`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&kind=video&q=${searchCriteria}&key=${
+        import.meta.env.VITE_API_KEY
+      }`
     )
       .then((response) => response.json())
       .then((response) => {
